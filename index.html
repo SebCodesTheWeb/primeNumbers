@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prime Numbers</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="math.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Pangolin&family=Supermercado+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="inputBox">
+        <div id="mainInput">
+            <label for="numberStart">Generate all prime numbers between:  </label>
+            <input type="number" min="0" placeholder="2000" id="number-selector" class="gradient-border">
+            <label for="numberEnd">  and  </label>
+            <input type="number" min="0" placeholder="4000" id="number-selector" class="gradient-border secondNumberInput">
+            <p>(max-interval is 10 000)</p>
+            <input type="submit" value="Calculate" id="number-selector" class="gradient-border calculateButton">
+        </div>
+    </div>
+    <p id="numberInfo"></p>
+    <div id="primeNumbers"></div>
+    <h1 id="numberData"></h1>
+    <h2 id="isGenerated" style=" position: absolute; top: 350px; left: 50%; transform: translate(-50%, 0);">(Can take up to 10 seconds)</h2>
+</body>
+</html>
